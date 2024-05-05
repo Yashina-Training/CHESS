@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  bottom: 0;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+}
+
+p,
+a {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.infoblock {
+  margin-bottom: 50px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.birthday {
+  color: green;
+}
+
+.status {
+  color: red;
+}
+
+.info {
+  color: blue;
+  text-decoration: none;
+}
+
+.info::before {
+  content: url(img/extref.png);
+  margin-right: 3px;
+}
+
+.text {
+  color: blue;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.to-top {
+  color: blue;
+  text-decoration: none;
+}
