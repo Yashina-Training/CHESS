@@ -41,9 +41,12 @@ a {
   color: blue;
   text-decoration: none;
   padding-left: 15px;
-  background: no-repeat center left/11% url(img/extref.png);
+
 }
 
+a[href*="//"] {
+  background: no-repeat center left/11% url(img/extref.png);
+}
 
 .text {
   color: blue;

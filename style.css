@@ -42,7 +42,7 @@ a {
   text-decoration: none;
 }
 
-.info::before {
+a[href*="//"]::before {
   content: url(img/extref.png);
   margin-right: 3px;
 }
