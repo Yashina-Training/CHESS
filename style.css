@@ -42,7 +42,8 @@ a {
   text-decoration: none;
 }
 
-a[href*="//"]::before {
+a[href*="//"]::before
+{
   content: url(img/extref.png);
   margin-right: 3px;
 }
@@ -56,4 +57,25 @@ a[href*="//"]::before {
 .to-top {
   color: blue;
   text-decoration: none;
+}
+
+@media print {
+  .info {
+    visibility: hidden;
+  }
+  .infoblock:nth-child(1) .info:after {
+    content: "ссылка на https://chesspro.ru/statistic/botvinnik.shtml";
+    visibility: visible;
+    margin-left: -107px;
+  }
+  .infoblock:nth-child(2) .info:after {
+    content: "ссылка на https://chesspro.ru/statistic/karpov.shtml";
+    visibility: visible;
+    margin-left: -107px;
+  }
+  .infoblock:nth-child(3) .info:after {
+    content: "ссылка на https://chesspro.ru/statistic/kasparov.shtml";
+    visibility: visible;
+    margin-left: -107px;
+  }
 }
